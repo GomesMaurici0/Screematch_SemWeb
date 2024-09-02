@@ -1,4 +1,4 @@
-package br.com.alura.screematch.model;
+package br.com.alura.screematch.dados;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -18,6 +18,7 @@ public class DadosSerie {
 	@JsonAlias("totalSeasons")
 	private Integer totalTemporadas;
 
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -33,11 +34,12 @@ public class DadosSerie {
 	public Integer getTotalTemporadas() {
 		return totalTemporadas;
 	}
+
 	public String toString(){
 		return
 				"Titulo: "+ titulo+ "\n"+
 				"Ano: "+ year+ "\n"+
 				"Genero:  "+ genero+ "\n"+
-				"Total de Temporadas: "+totalTemporadas;
+				"Total de Temporadas: "+totalTemporadas+"\n";
 	}
 }
